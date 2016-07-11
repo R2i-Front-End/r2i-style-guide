@@ -1,0 +1,32 @@
+/* CSS Document */
+main {
+    position: fixed;
+    top: 7.5vh;
+    right: 0;
+    width: 83.333vw;
+    height: 85vh;
+    .bg-white;
+    overflow: auto;
+    padding: 1.25vw;
+    z-index: 300;
+    article {
+        max-width: 1600px;
+        margin: 0;
+        .clearfix;
+        + article {
+            margin: (@gutter * 4) 0 0;
+            padding: (@gutter * 4) 0 0;
+            border-top: 1px solid @grey-6;
+        }
+    }
+    aside {
+        float: left;
+        width: 25%;
+        padding: 0 (@gutter * 2) 0 0;
+    }
+    section {
+        float: right;
+        width: 75%;
+        padding: 0 0 0 (@gutter * 2);
+    }
+}

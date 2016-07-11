@@ -1,0 +1,42 @@
+/* CSS Document */
+/* STYLE GUIDE COLORS */
+@black: #000;
+@white: #fff;
+@grey-1: #222;
+@grey-2: #444;
+@grey-3: #666;
+@grey-4: #888;
+@grey-5: #AAA;
+@grey-6: #CCC;
+/*---===<<< GUTTER >>>===---*/
+@gutterPX: 15px;
+@gutter: 1.5rem;
+/*---===<<< MEDIA QUERIES >>>===---*/
+/*---=== SIZES ===---*/
+@sizeXSMax: 767px;
+@sizeSM: 768px;
+@sizeMD: 992px;
+@sizeLG: 1200px;
+@sizeXL: 1600px;
+@sizeXXL: 1920px;
+@sizeMax: 1600px;
+@sizeMin: 320px;
+@sizeSMMax: (@sizeMD - 1);
+@sizeMDMax: (@sizeLG - 1);
+@sizeLGMax: (@sizeXL - 1);
+/*---=== QUERIES ===---*/
+@mediaXS: ~"screen and (max-width: @{sizeXSMax})";
+@mediaXSPortrait: ~"screen and (max-width: 500px)";
+@mediaXSLandscape: ~"screen and (min-width: 501px) and (max-width: 680px)";
+@mediaXSTablet: ~"screen and (min-width: 681px) and (max-width: @{sizeXSMax})";
+@mediaSM: ~"screen and (min-width: @{sizeSM})";
+@mediaSMOnly: ~"screen and (min-width: @{sizeSM}) and (max-width: @{sizeSMMax})";
+@mediaMobileHeader: ~"screen and (max-width: @{sizeSMMax})";
+@mediaMD: ~"screen and (min-width: @{sizeMD})";
+@mediaMDMax: ~"screen and (max-width: @{sizeMD})";
+@mediaMDOnly: ~"screen and (min-width: @{sizeMD}) and (max-width: @{sizeMDMax})";
+@mediaLG: ~"screen and (min-width: @{sizeLG})";
+@mediaLGMax: ~"screen and (max-width: @{sizeLG})";
+@mediaLGOnly: ~"screen and (min-width: @{sizeLG}) and (max-width: @{sizeLGMax})";
+@mediaXL: ~"screen and (min-width: @{sizeXL})";
+@mediaXXL: ~"screen and (min-width: @{sizeXXL})";
