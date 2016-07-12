@@ -1,7 +1,7 @@
 /* CSS Document */
 .nav-main {
     position: fixed;
-    top: 7.5vh;
+    top: 8vh;
     left: 0;
     width: 16.667vw;
     height: 85vh;
@@ -11,7 +11,13 @@
     z-index: 400;
     > ul {
         > li {
-            > a {}
+            border-bottom: 1px solid @grey-6;
+            > a {
+                font-size:1.4rem;
+                color: @grey-3;
+                &:active {color:@tertiary;}
+                padding: 2.5vh 4vh;
+            }
             > ul {
                 > li {
                     > a {

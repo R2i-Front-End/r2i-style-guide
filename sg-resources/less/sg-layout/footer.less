@@ -4,10 +4,35 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 7.5vh;
+    height: 7vh;
     .bg-white;
-    .box-shadow;
+    box-shadow: none;
+    border-top:1px solid @grey-6;
     z-index: 500;
+    font-size:1.2rem;
     /*--- LOCATIONS AND COPYRIGHT ---*/
+    .copyright {
+        position:absolute;
+        top:50%;
+        left:4vh;
+        transform:translate(0,-50%);
+        color: @grey-3;
+        a {color: @grey-3;}
+    }
+    .credits {
+        position:absolute;
+        top:50%;
+        right: 10vh;
+        transform:translate(0,-50%);
+        color: @grey-3;
+    }
+    .st0{fill:#ff9200;}
+    svg {
+        height: 5vh;
+        position:absolute;
+        top:50%;
+        transform:translate(0,-50%);
+        right:4vh;
+        }
 }
 
