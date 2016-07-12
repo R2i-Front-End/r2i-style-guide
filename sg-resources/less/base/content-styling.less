@@ -4,34 +4,74 @@ body {
 }
 main {
     h1, h2, h3, h4, h5, li, p, blockquote, div, td, th, article, section, figure {
-        .txt-grey-3;
-        line-height: 1.5em;
+        &.sg {
+            .txt-grey-3;
+            line-height: 1.5em;
+        }
     }
     h1 {
-        font-size: 3.2rem;
-        .fw-bold;
+        &.sg {
+            font-size: 3.2rem;
+            .fw-bold;
+        }
     }
     h2 {
-        font-size: 2.8rem;
-        .fw-bold;
+        &.sg {
+            font-size: 2.8rem;
+            .fw-bold;
+        }
     }
     h3 {
-        font-size: 2.4rem;
-        .fw-bold;
+        &.sg {
+            font-size: 2.4rem;
+            .fw-bold;
+        }
     }
     h4 {
-        font-size: 2rem;
-        .fw-medi;
+        &.sg {
+            font-size: 2rem;
+            .fw-medi;
+        }
     }
     h5 {
-        font-size: 1.8rem;
-        .fw-medi;
+        &.sg {
+            font-size: 1.8rem;
+            .fw-medi;
+        }
     }
     h6 {
-        font-size: 1.6rem;
-        .fw-medi;
+        &.sg {
+            font-size: 1.6rem;
+            .fw-medi;
+        }
     }
-    p, li, div, td, th, blockquote, article, section, figure {
-        font-size: 1.4rem;
+    p, li, div, blockquote, article, section, figure, table {
+        &.sg {
+            font-size: 1.4rem;
+        }
+    }
+    table {
+        &.sg {
+            border: 1px solid @grey-5;
+            border-collapse: collapse;
+            td, th {
+                border: 1px solid @grey-5;
+                font-size: 1.2rem;
+                font-weight: normal;
+            }
+            th {
+                width: 25%;
+                .bg-grey-5;
+                .txt-white;
+                &[colspan="2"] {
+                    font-weight: bold;
+                    background: #f0f0f0;
+                    .txt-grey-1;
+                }
+            }
+            td {
+                width: 75%;
+            }
+        }
     }
 }

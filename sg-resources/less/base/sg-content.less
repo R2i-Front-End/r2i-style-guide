@@ -1,2 +1,61 @@
 /* CSS Document */
-
+.sg-content {
+    pre {
+        padding: 0;
+        margin: 0;
+        border: 2px solid @grey-1;
+        .border-radius(1rem);
+        .bg-grey-2;
+        .txt-white;
+        &:before {
+            content: attr(rel);
+            padding: 1rem;
+            .bg-grey-1;
+            .txt-white;
+            .uppercase;
+            display: block;
+            .fw-bold;
+            font-size: 1.6rem;
+        }
+        code {
+            padding: 1rem;
+            display: block;
+        }
+        &.language-markup {
+            &[rel="html"] {
+                /* STRING */
+                .str {
+                    color: #fec243;
+                }
+                /* KEYWORD */
+                .kwd {
+                    color: #8470ff;
+                }
+                /* COMMENT */
+                .com {
+                    color: #32cd32;
+                }
+                /* TYPE */
+                .typ {
+                    color: #6ecbcc;
+                }
+                /* TAG */
+                .tag {
+                    color: #9c9cff;
+                }
+                /* ATTRIBUTE NAME */
+                .atn {
+                    color: #46eeee;
+                }
+                /* ATTRIBUTE VALUE */
+                .atv {
+                    color: #eeb4b4;
+                }
+                /* DECIMAL */
+                .dec {
+                    color: #3387cc;
+                }
+            }
+        }
+    }
+}
