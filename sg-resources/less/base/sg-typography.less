@@ -2,8 +2,37 @@
 .sg-typography {
     width: 50%;
     float: left;
-    padding: 0 (@gutter * 2);
+    padding: 0 @gutter (@gutter * 2);
     &:nth-child(2n + 1) {
         clear: both;
+    }
+    .lg-letters {
+        .bg-grey-3;
+        padding: 50% 0 0;
+        position: relative;
+        display: block;
+        margin: 0 0 (@gutter * .75);
+        input {
+            .bg-primary;
+            .txt-white;
+            font-size: 15rem;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            .ta-center;
+        }
+    }
+    input, textarea {
+        border: none;
+        width: 100%;
+        font-size: 1.6rem;
+        line-height: 1.5em;
+        margin: 0 0 .5em;
+        padding: 0;
+    }
+    textarea {
+        height: 6em;
     }
 }

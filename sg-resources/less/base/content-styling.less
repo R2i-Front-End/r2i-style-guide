@@ -3,46 +3,54 @@ body {
     font-size: 62.5%;
 }
 main {
-    h1, h2, h3, h4, h5, li, p, blockquote, div, td, th, article, section, figure {
+    h1, h2, h3, h4, h5, li, p, blockquote, div, td, th, article, section, figure, pre, table {
         &.sg {
             .txt-grey-3;
             line-height: 1.5em;
+            margin: 0 0 1.5em;
+            padding: 0;
         }
     }
     h1 {
         &.sg {
             font-size: 3.2rem;
             .fw-bold;
+            margin: 0 0 .5em;
         }
     }
     h2 {
         &.sg {
             font-size: 2.8rem;
             .fw-bold;
+            margin: 0 0 .75em;
         }
     }
     h3 {
         &.sg {
             font-size: 2.4rem;
             .fw-bold;
+            margin: 0 0 1.5em;
         }
     }
     h4 {
         &.sg {
             font-size: 2rem;
             .fw-medi;
+            margin: 0 0 1.5em;
         }
     }
     h5 {
         &.sg {
             font-size: 1.8rem;
             .fw-medi;
+            margin: 0 0 1.5em;
         }
     }
     h6 {
         &.sg {
             font-size: 1.6rem;
             .fw-medi;
+            margin: 0 0 1.5em;
         }
     }
     p, li, div, blockquote, article, section, figure, table {
@@ -52,25 +60,83 @@ main {
     }
     table {
         &.sg {
-            border: 1px solid @grey-5;
+            border: 1px solid @branding-lgrey;
             border-collapse: collapse;
+            margin: 0 0 1.5em;
             td, th {
-                border: 1px solid @grey-5;
+                border: 1px solid @branding-lgrey;
                 font-size: 1.2rem;
                 font-weight: normal;
             }
             th {
                 width: 25%;
-                .bg-grey-5;
-                .txt-white;
+                .bg-branding-lgrey;
+                .txt-branding-dgrey;
                 &[colspan="2"] {
                     font-weight: bold;
-                    background: #f0f0f0;
-                    .txt-grey-1;
+                    .bg-branding-dgrey;
+                    .txt-white;
                 }
             }
             td {
                 width: 75%;
+            }
+        }
+    }
+    
+    pre.language-markup {
+        padding: 0;
+        margin: 0 0 1.5em;
+        border: 2px solid @grey-1;
+        .border-radius(0);
+        .bg-grey-2;
+        .txt-white;
+        &:before {
+            content: attr(rel);
+            padding: 1rem;
+            .bg-grey-1;
+            .txt-white;
+            .uppercase;
+            display: block;
+            .fw-bold;
+            font-size: 1.6rem;
+        }
+        code {
+            padding: 1rem;
+            display: block;
+        }
+        &[rel="html"] {
+            /* STRING */
+            .str {
+                color: #fec243;
+            }
+            /* KEYWORD */
+            .kwd {
+                color: #8470ff;
+            }
+            /* COMMENT */
+            .com {
+                color: #32cd32;
+            }
+            /* TYPE */
+            .typ {
+                color: #6ecbcc;
+            }
+            /* TAG */
+            .tag {
+                color: #9c9cff;
+            }
+            /* ATTRIBUTE NAME */
+            .atn {
+                color: #46eeee;
+            }
+            /* ATTRIBUTE VALUE */
+            .atv {
+                color: #eeb4b4;
+            }
+            /* DECIMAL */
+            .dec {
+                color: #3387cc;
             }
         }
     }
