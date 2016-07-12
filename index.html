@@ -40,9 +40,8 @@
             <li><a href="#colors">Color Palette</a></li>
             <li><a href="#typography">Typography</a></li>
             <li><a href="#styles">Content Styles</a></li>
-            <li><a href="#icons">Iconography</a></li>
-            <li><a href="#background-patterns">Background Patterns</a></li>
-            <li><a href="#forms">Form Elements</a></li>
+            <li><a href="#button">Buttons</a></li>
+            <li><a href="#iconography">Iconography</a></li>
             <!-- END STYLE GUIDE PAGES -->
         </ul>
     </nav>
@@ -56,11 +55,11 @@
         <!-- COPY THE ARTICLE BELOW TO CREATE EACH ELEMENT 
         <article>
             <aside>
-                <h1>Article Title</h1>
-                <p>Content goes here...</p>
+                <h1 class="sg">Article Title</h1>
+                <p class="sg">Content goes here...</p>
             </aside>
             <section>
-                <h2>Detail Title</h2>
+                <h2 class="sg">Detail Title</h2>
                 ... stuff ... 
             </section>
         </article>
@@ -634,8 +633,69 @@ Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
             </section>
         </article>
         <!-- END CONTENT STYLES COPY -->
+        <!-- START BUTTONS -->
+        <article id="button">
+            <aside>
+                <h1 class="sg">Buttons</h1>
+                <p class="sg">To the right, the button styles are shown. These can be used throughout the site to add a more obvious call to action.</p>
+            </aside>
+            <section>
+                <h2 class="sg">Primary Buttons</h2>
+                <div class="row">
+                    <figure class="sg-button">
+                        <div class="buttons">
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                            <a href="#" class="btn btn-primary hover">Learn More</a>
+                        </div>
+                        <table class="table sg sg-info">
+                            <tr>
+                                <th>Class</th>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </figure>
+                    <figure class="sg-button">
+                        <div class="buttons">
+                            <a href="#" class="btn btn-success">Learn More</a>
+                            <a href="#" class="btn btn-success hover">Learn More</a>
+                        </div>
+                        <table class="table sg sg-info">
+                            <tr>
+                                <th>Class</th>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </figure>
+                    <figure class="sg-button">
+                        <div class="buttons">
+                            <a href="#" class="btn btn-warning">Learn More</a>
+                            <a href="#" class="btn btn-warning hover">Learn More</a>
+                        </div>
+                        <table class="table sg sg-info">
+                            <tr>
+                                <th>Class</th>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </figure>
+                    <figure class="sg-button">
+                        <div class="buttons">
+                            <a href="#" class="btn btn-danger">Learn More</a>
+                            <a href="#" class="btn btn-danger hover">Learn More</a>
+                        </div>
+                        <table class="table sg sg-info">
+                            <tr>
+                                <th>Class</th>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </figure>
+                </div>
+            </section>
+        </article>
+        <!-- END BUTTONS -->
         <!-- START ICONOGRAPHY -->
-        <article>
+        <article id="iconography">
             <aside>
                 <h1 class="sg">Iconography</h1>
                 <p class="sg">Icons can be used to convey information and not simply for decoration. Icons are primarily used as a symbolic representation for the user to have a quick association between image and type.</p>
@@ -792,5 +852,24 @@ Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
             </a>
         </div>
     </footer>
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            jQuery('a[href^="#"]').on('click', function() {
+                event.preventDefault();
+                var loc = jQuery(this).attr('href'),
+                    $loc = jQuery(loc),
+                    locScroll = $loc.position().top - jQuery('header').outerHeight(true) + 60;
+                jQuery('.nav-main .active').removeClass('active');
+                jQuery('.nav-main a[href="' + loc + '"]').parent().addClass('active');
+                jQuery('html, body').animate({
+                    scrollTop: locScroll
+                });
+            });
+            jQuery('body').scrollspy({
+                target: '.nav-main',
+                offset: jQuery('header').outerHeight(true) + 60
+            });
+        });
+    </script>
 </body>
 </html>

@@ -15,8 +15,12 @@
             > a {
                 font-size:1.4rem;
                 color: @grey-3;
-                &:active {color:@tertiary;}
-                padding: 2.5vh 4vh;
+                padding: 1.5vh 4vh;
+            }
+            &.active {
+                > a {
+                    color:@tertiary;
+                }
             }
             > ul {
                 > li {
