@@ -13,6 +13,7 @@
         > li {
             border-bottom: 1px solid @grey-6;
             > a {
+                display: block;
                 font-size:1.4rem;
                 color: @grey-3;
                 padding: 1.5vh 4vh;
@@ -23,9 +24,26 @@
                 }
             }
             > ul {
+                display: none;
+                margin: 0;
+                padding: 0;
                 > li {
-                    > a {
+                    + li {
                     }
+                    > a {
+                        display: block;
+                        color: @grey-3;
+                        font-size: 1.2rem;
+                        padding: .75vh 4vh .75vh 6vh;
+                    }
+                    &.active {
+                        color: @tertiary;
+                    }
+                }
+            }
+            &.active {
+                > ul {
+                    display: block;
                 }
             }
         }

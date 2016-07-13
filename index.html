@@ -36,42 +36,54 @@
     <nav class="nav-main">
         <ul class="nav">
             <!-- START STYLE GUIDE PAGES -->
-            <li><a href="#overview" class="active">Overview</a></li>
-            <li><a href="#colors">Color Palette</a></li>
-            <li><a href="#typography">Typography</a></li>
-            <li><a href="#styles">Content Styles</a></li>
-            <li><a href="#button">Buttons</a></li>
-            <li><a href="#iconography">Iconography</a></li>
+            <li class="active">
+                <a href="#overview">Overview</a>
+                <ul>
+                    <li><a href="#colors">Color Palette</a></li>
+                    <li><a href="#typography">Typography</a></li>
+                    <li><a href="#styles">Content Styles</a></li>
+                    <li><a href="#button">Buttons</a></li>
+                    <li><a href="#iconography">Iconography</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#components">Components</a>
+                <ul>
+                    <li><a href="#banners">Banners</a></li>
+                    <li><a href="#tabs">Tabs</a></li>
+                    <li><a href="#accordions">Accordions</a></li>
+                    <li><a href="#cta">Calls To Action</a></li>
+                    <li><a href="#promo">Promos</a></li>
+                </ul>
+            </li>
             <!-- END STYLE GUIDE PAGES -->
         </ul>
     </nav>
     <main>
-        <article id="overview" class="sg jumbotron">
+        <article id="overview" class="sg">
             <!-- BRAND LOGO -->
-            <h1 class="sg">[CLIENT] Style Guide</h1>
-            <p class="sg">A brand is a company's single most important asset. A significant part of any brand is visual identity. Visual identity is the face of the brand. To be memorable and effective, your visual identity must be applied consistently across all brand touch points. This guide outlines usage requirements for every aspect of your visual identity to help you create a coherent image across all your materials.</p>
-        </article>
-        <!-- EACH LOCATION IN THE NAVIGATION SHOULD HAVE AN ARTICLE RELATED TO IT -->
-        <!-- COPY THE ARTICLE BELOW TO CREATE EACH ELEMENT 
-        <article>
-            <aside>
-                <h1 class="sg">Article Title</h1>
-                <p class="sg">Content goes here...</p>
-            </aside>
-            <section>
-                <h2 class="sg">Detail Title</h2>
-                ... stuff ... 
+            <section class="sg jumbotron">
+                <h1 class="sg">[CLIENT] Style Guide</h1>
+                <p class="sg">A brand is a company's single most important asset. A significant part of any brand is visual identity. Visual identity is the face of the brand. To be memorable and effective, your visual identity must be applied consistently across all brand touch points. This guide outlines usage requirements for every aspect of your visual identity to help you create a coherent image across all your materials.</p>
             </section>
-        </article>
-        -->
-        <!-- START COLOR COPY -->
-        <article id="colors">
-            <aside>
+            <!-- EACH LOCATION IN THE NAVIGATION SHOULD HAVE AN ARTICLE RELATED TO IT -->
+            <!-- COPY THE ARTICLE BELOW TO CREATE EACH ELEMENT 
+            <div>
+                <aside>
+                    <h1 class="sg">Article Title</h1>
+                    <p class="sg">Content goes here...</p>
+                </aside>
+                <section>
+                    <h2 class="sg">Detail Title</h2>
+                    ... stuff ... 
+                </section>
+            </div>
+            -->
+            <!-- START COLOR COPY -->
+            <section id="colors">
                 <h1 class="sg">Colors</h1>
                 <p class="sg">[CLIENT] colors are fresh, bold, bright and energetic. The primary and secondary color palettes combine to lend the [CLIENT] brand a youthful, modern, and aspirational feel.  </p>
                 <p class="sg">The RGB and HEX formulas are provided for digital use.</p>
-            </aside>
-            <section>
                 <h2 class="sg">Color Palette</h2>
                 <div class="row">
                     <figure class="sg-color">
@@ -207,17 +219,13 @@
                     </figure>
                 </div>
             </section>
-        </article>
-        <!-- END COLOR COPY -->
-        <!-- START TYPOGRAPHY COPY -->
-        <article id="typography">
-            <aside>
+            <!-- END COLOR COPY -->
+            <!-- START TYPOGRAPHY COPY -->
+            <section id="typography">
                 <h1 class="sg">Typography</h1>
                 <h2 class="sg">Type is beautiful, and it matters.</h2>
                 <p class="sg">Type is a key design for the [CLIENT] brand. it reinforces out message both what we say and how we say it. Open Sans and Open Sans Condensed align with our brand personality.</p>
                 <p class="sg">Open Sans is a complete typeface with 10 styles. Open Sans Condensed is a complete typeface with 3 styles.</p>
-            </aside>
-            <section>
                 <h2 class="sg">Font Name</h2>
                 <div class="row">
                     <figure class="sg-typography">
@@ -225,37 +233,33 @@
                         <h3 class="sg">Weight</h3>
                         <h5 class="sg"><input type="text" value="A quick brown fox jumps over the lazy dog." /></h5>
                         <textarea class="sg">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn
-Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
-0123456789 - !@#$%^&amp;*()</textarea>
+    Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
+    0123456789 - !@#$%^&amp;*()</textarea>
                     </figure>
                     <figure class="sg-typography">
                         <span class="lg-letters"><input type="text" value="Aa" /></span>
                         <h3 class="sg">Weight</h3>
                         <h5 class="sg"><input type="text" value="A quick brown fox jumps over the lazy dog." /></h5>
                         <textarea class="sg">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn
-Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
-0123456789 - !@#$%^&amp;*()</textarea>
+    Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
+    0123456789 - !@#$%^&amp;*()</textarea>
                     </figure>
                     <figure class="sg-typography">
                         <span class="lg-letters"><input type="text" value="Aa" /></span>
                         <h3 class="sg">Weight</h3>
                         <h5 class="sg"><input type="text" value="A quick brown fox jumps over the lazy dog." /></h5>
                         <textarea class="sg">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn
-Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
-0123456789 - !@#$%^&amp;*()</textarea>
+    Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
+    0123456789 - !@#$%^&amp;*()</textarea>
                     </figure>
                 </div>
             </section>
-        </article>
-        <!-- END TYPOGRAPHY COPY -->
-        <!-- START CONTENT STYLES COPY -->
-        <article id="styles">
-            <aside>
+            <!-- END TYPOGRAPHY COPY -->
+            <!-- START CONTENT STYLES COPY -->
+            <section id="styles">
                 <h1 class="sg">Content Styles</h1>
                 <h2 class="sg">Type is beautiful, and it matters.</h2>
                 <p class="sg">To the right, the header and body copy styles are shown for the web font.</p>
-            </aside>
-            <section>
                 <h2 class="sg">Headings</h2>
                 <figure class="sg-content">
                     <h3 class="sg">H1</h3>
@@ -419,7 +423,7 @@ Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
                         </tr>
                     </table>
                     <pre rel="html" class="language-markup"><code><span class="tag">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id sem ipsum. In quis lorem malesuada ante vulputate placerat. Cras lobortis ligula neque, et accumsan nisi commodo scelerisque. Vestibulum laoreet risus ut dui tristique pretium. Nam maximus fermentum arcu tempor efficitur. Suspendisse at mauris quis leo sollicitudin sagittis. Donec sed dui mi. Sed maximus sem vel ligula blandit, quis laoreet magna aliquam. Suspendisse pharetra lectus non nulla tempor ultricies. Aenean nulla odio, aliquam sed lectus et, venenatis iaculis tortor. In quis commodo orci. Morbi lectus diam, fermentum non orci in, blandit aliquet felis. Sed mollis mollis sapien. Aenean et cursus metus.<span class="tag">&lt;/p&gt;</span>
-<span class="tag">&lt;p&gt;</span>Nam in ullamcorper nisi. Cras congue facilisis justo in pretium. Vivamus et tellus semper, tincidunt massa a, blandit justo. Ut nec imperdiet justo. Morbi quis orci semper, imperdiet lectus a, elementum justo. Donec dictum libero sed ligula sollicitudin lacinia. Suspendisse cursus diam tellus, ac mattis tortor ornare nec.<span class="tag">&lt;/p&gt;</span></code></pre>
+    <span class="tag">&lt;p&gt;</span>Nam in ullamcorper nisi. Cras congue facilisis justo in pretium. Vivamus et tellus semper, tincidunt massa a, blandit justo. Ut nec imperdiet justo. Morbi quis orci semper, imperdiet lectus a, elementum justo. Donec dictum libero sed ligula sollicitudin lacinia. Suspendisse cursus diam tellus, ac mattis tortor ornare nec.<span class="tag">&lt;/p&gt;</span></code></pre>
                 </figure>
                 <figure class="sg-content">
                     <h3 class="sg">Unordered List</h3>
@@ -449,12 +453,12 @@ Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
                         </tr>
                     </table>
                     <pre rel="html" class="language-markup"><code><span class="tag">&lt;ul&gt;</span>
-    <span class="tag">&lt;li&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span class="tag">&lt;/li&gt;</span>
-    <span class="tag">&lt;li&gt;</span>Duis id sem ipsum.<span class="tag">&lt;/li&gt;</span>
-    <span class="tag">&lt;li&gt;</span>In quis lorem malesuada ante vulputate placerat.<span class="tag">&lt;/li&gt;</span>
-    <span class="tag">&lt;li&gt;</span>Cras lobortis ligula neque, et accumsan nisi commodo scelerisque.<span class="tag">&lt;/li&gt;</span>
-    <span class="tag">&lt;li&gt;</span>Vestibulum laoreet risus ut dui tristique pretium.<span class="tag">&lt;/li&gt;</span>
-<span class="tag">&lt;/ul&gt;</span></code></pre>
+        <span class="tag">&lt;li&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span class="tag">&lt;/li&gt;</span>
+        <span class="tag">&lt;li&gt;</span>Duis id sem ipsum.<span class="tag">&lt;/li&gt;</span>
+        <span class="tag">&lt;li&gt;</span>In quis lorem malesuada ante vulputate placerat.<span class="tag">&lt;/li&gt;</span>
+        <span class="tag">&lt;li&gt;</span>Cras lobortis ligula neque, et accumsan nisi commodo scelerisque.<span class="tag">&lt;/li&gt;</span>
+        <span class="tag">&lt;li&gt;</span>Vestibulum laoreet risus ut dui tristique pretium.<span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;/ul&gt;</span></code></pre>
                 </figure>
                 <figure class="sg-content">
                     <h3 class="sg">Ordered List</h3>
@@ -484,12 +488,12 @@ Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
                         </tr>
                     </table>
                     <pre rel="html" class="language-markup"><code><span class="tag">&lt;ol&gt;</span>
-    <span class="tag">&lt;li&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span class="tag">&lt;/li&gt;</span>
-    <span class="tag">&lt;li&gt;</span>Duis id sem ipsum.<span class="tag">&lt;/li&gt;</span>
-    <span class="tag">&lt;li&gt;</span>In quis lorem malesuada ante vulputate placerat.<span class="tag">&lt;/li&gt;</span>
-    <span class="tag">&lt;li&gt;</span>Cras lobortis ligula neque, et accumsan nisi commodo scelerisque.<span class="tag">&lt;/li&gt;</span>
-    <span class="tag">&lt;li&gt;</span>Vestibulum laoreet risus ut dui tristique pretium.<span class="tag">&lt;/li&gt;</span>
-<span class="tag">&lt;/ol&gt;</span></code></pre>
+        <span class="tag">&lt;li&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<span class="tag">&lt;/li&gt;</span>
+        <span class="tag">&lt;li&gt;</span>Duis id sem ipsum.<span class="tag">&lt;/li&gt;</span>
+        <span class="tag">&lt;li&gt;</span>In quis lorem malesuada ante vulputate placerat.<span class="tag">&lt;/li&gt;</span>
+        <span class="tag">&lt;li&gt;</span>Cras lobortis ligula neque, et accumsan nisi commodo scelerisque.<span class="tag">&lt;/li&gt;</span>
+        <span class="tag">&lt;li&gt;</span>Vestibulum laoreet risus ut dui tristique pretium.<span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;/ol&gt;</span></code></pre>
                 </figure>
                 <figure class="sg-content">
                     <h3 class="sg">Table</h3>
@@ -582,70 +586,66 @@ Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
                         </tr>
                     </table>
                     <pre rel="html" class="language-markup"><code><span class="tag">&lt;table <span class="atn">class="</span><span class="atv">table</span><span class="atn">"</span>&gt;</span>
-    <span class="tag">&lt;thead&gt;</span>
-        <span class="tag">&lt;tr&gt;</span>
-            <span class="tag">&lt;th&gt;</span>TH1<span class="tag">&lt;/th&gt;</span>
-            <span class="tag">&lt;th&gt;</span>TH2<span class="tag">&lt;/th&gt;</span>
-            <span class="tag">&lt;th&gt;</span>TH3<span class="tag">&lt;/th&gt;</span>
-            <span class="tag">&lt;th&gt;</span>TH4<span class="tag">&lt;/th&gt;</span>
-        <span class="tag">&lt;/tr&gt;</span>
-    <span class="tag">&lt;/thead&gt;</span>
-    <span class="tag">&lt;tbody&gt;</span>
-        <span class="tag">&lt;tr&gt;</span>
-            <span class="tag">&lt;td&gt;</span>Table Row 1 - Cell 1<span class="tag">&lt;/td&gt;</span>
-            <span class="tag">&lt;td&gt;</span>Table Row 1 - Cell 2<span class="tag">&lt;/td&gt;</span>
-            <span class="tag">&lt;td&gt;</span>Table Row 1 - Cell 3<span class="tag">&lt;/td&gt;</span>
-            <span class="tag">&lt;td&gt;</span>Table Row 1 - Cell 4<span class="tag">&lt;/td&gt;</span>
-        <span class="tag">&lt;/tr&gt;</span>
-        <span class="tag">&lt;tr&gt;</span>
-            <span class="tag">&lt;td&gt;</span>Table Row 2 - Cell 1<span class="tag">&lt;/td&gt;</span>
-            <span class="tag">&lt;td&gt;</span>Table Row 2 - Cell 2<span class="tag">&lt;/td&gt;</span>
-            <span class="tag">&lt;td&gt;</span>Table Row 2 - Cell 3<span class="tag">&lt;/td&gt;</span>
-            <span class="tag">&lt;td&gt;</span>Table Row 2 - Cell 4<span class="tag">&lt;/td&gt;</span>
-        <span class="tag">&lt;/tr&gt;</span>
-        <span class="tag">&lt;tr&gt;</span>
-            <span class="tag">&lt;td&gt;</span>Table Row 3 - Cell 1<span class="tag">&lt;/td&gt;</span>
-            <span class="tag">&lt;td&gt;</span>Table Row 3 - Cell 2<span class="tag">&lt;/td&gt;</span>
-            <span class="tag">&lt;td&gt;</span>Table Row 3 - Cell 3<span class="tag">&lt;/td&gt;</span>
-            <span class="tag">&lt;td&gt;</span>Table Row 3 - Cell 4<span class="tag">&lt;/td&gt;</span>
-        <span class="tag">&lt;/tr&gt;</span>
-        <span class="tag">&lt;tr&gt;</span>
-            <span class="tag">&lt;td&gt;</span>Table Row 4 - Cell 1<span class="tag">&lt;/td&gt;</span>
-            <span class="tag">&lt;td&gt;</span>Table Row 4 - Cell 2<span class="tag">&lt;/td&gt;</span>
-            <span class="tag">&lt;td&gt;</span>Table Row 4 - Cell 3<span class="tag">&lt;/td&gt;</span>
-            <span class="tag">&lt;td&gt;</span>Table Row 4 - Cell 4<span class="tag">&lt;/td&gt;</span>
-        <span class="tag">&lt;/tr&gt;</span>
-        <span class="tag">&lt;tr&gt;</span>
-            <span class="tag">&lt;td&gt;</span>Table Row 5 - Cell 1<span class="tag">&lt;/td&gt;</span>
-            <span class="tag">&lt;td&gt;</span>Table Row 5 - Cell 2<span class="tag">&lt;/td&gt;</span>
-            <span class="tag">&lt;td&gt;</span>Table Row 5 - Cell 3<span class="tag">&lt;/td&gt;</span>
-            <span class="tag">&lt;td&gt;</span>Table Row 5 - Cell 4<span class="tag">&lt;/td&gt;</span>
-        <span class="tag">&lt;/tr&gt;</span>
-        <span class="tag">&lt;tr&gt;</span>
-            <span class="tag">&lt;td&gt;</span>Table Row 6 - Cell 1<span class="tag">&lt;/td&gt;</span>
-            <span class="tag">&lt;td&gt;</span>Table Row 6 - Cell 2<span class="tag">&lt;/td&gt;</span>
-            <span class="tag">&lt;td&gt;</span>Table Row 6 - Cell 3<span class="tag">&lt;/td&gt;</span>
-            <span class="tag">&lt;td&gt;</span>Table Row 6 - Cell 4<span class="tag">&lt;/td&gt;</span>
-        <span class="tag">&lt;/tr&gt;</span>
-    <span class="tag">&lt;/tbody&gt;</span>
-<span class="tag">&lt;/table&gt;</span></code></pre>
+        <span class="tag">&lt;thead&gt;</span>
+            <span class="tag">&lt;tr&gt;</span>
+                <span class="tag">&lt;th&gt;</span>TH1<span class="tag">&lt;/th&gt;</span>
+                <span class="tag">&lt;th&gt;</span>TH2<span class="tag">&lt;/th&gt;</span>
+                <span class="tag">&lt;th&gt;</span>TH3<span class="tag">&lt;/th&gt;</span>
+                <span class="tag">&lt;th&gt;</span>TH4<span class="tag">&lt;/th&gt;</span>
+            <span class="tag">&lt;/tr&gt;</span>
+        <span class="tag">&lt;/thead&gt;</span>
+        <span class="tag">&lt;tbody&gt;</span>
+            <span class="tag">&lt;tr&gt;</span>
+                <span class="tag">&lt;td&gt;</span>Table Row 1 - Cell 1<span class="tag">&lt;/td&gt;</span>
+                <span class="tag">&lt;td&gt;</span>Table Row 1 - Cell 2<span class="tag">&lt;/td&gt;</span>
+                <span class="tag">&lt;td&gt;</span>Table Row 1 - Cell 3<span class="tag">&lt;/td&gt;</span>
+                <span class="tag">&lt;td&gt;</span>Table Row 1 - Cell 4<span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;/tr&gt;</span>
+            <span class="tag">&lt;tr&gt;</span>
+                <span class="tag">&lt;td&gt;</span>Table Row 2 - Cell 1<span class="tag">&lt;/td&gt;</span>
+                <span class="tag">&lt;td&gt;</span>Table Row 2 - Cell 2<span class="tag">&lt;/td&gt;</span>
+                <span class="tag">&lt;td&gt;</span>Table Row 2 - Cell 3<span class="tag">&lt;/td&gt;</span>
+                <span class="tag">&lt;td&gt;</span>Table Row 2 - Cell 4<span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;/tr&gt;</span>
+            <span class="tag">&lt;tr&gt;</span>
+                <span class="tag">&lt;td&gt;</span>Table Row 3 - Cell 1<span class="tag">&lt;/td&gt;</span>
+                <span class="tag">&lt;td&gt;</span>Table Row 3 - Cell 2<span class="tag">&lt;/td&gt;</span>
+                <span class="tag">&lt;td&gt;</span>Table Row 3 - Cell 3<span class="tag">&lt;/td&gt;</span>
+                <span class="tag">&lt;td&gt;</span>Table Row 3 - Cell 4<span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;/tr&gt;</span>
+            <span class="tag">&lt;tr&gt;</span>
+                <span class="tag">&lt;td&gt;</span>Table Row 4 - Cell 1<span class="tag">&lt;/td&gt;</span>
+                <span class="tag">&lt;td&gt;</span>Table Row 4 - Cell 2<span class="tag">&lt;/td&gt;</span>
+                <span class="tag">&lt;td&gt;</span>Table Row 4 - Cell 3<span class="tag">&lt;/td&gt;</span>
+                <span class="tag">&lt;td&gt;</span>Table Row 4 - Cell 4<span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;/tr&gt;</span>
+            <span class="tag">&lt;tr&gt;</span>
+                <span class="tag">&lt;td&gt;</span>Table Row 5 - Cell 1<span class="tag">&lt;/td&gt;</span>
+                <span class="tag">&lt;td&gt;</span>Table Row 5 - Cell 2<span class="tag">&lt;/td&gt;</span>
+                <span class="tag">&lt;td&gt;</span>Table Row 5 - Cell 3<span class="tag">&lt;/td&gt;</span>
+                <span class="tag">&lt;td&gt;</span>Table Row 5 - Cell 4<span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;/tr&gt;</span>
+            <span class="tag">&lt;tr&gt;</span>
+                <span class="tag">&lt;td&gt;</span>Table Row 6 - Cell 1<span class="tag">&lt;/td&gt;</span>
+                <span class="tag">&lt;td&gt;</span>Table Row 6 - Cell 2<span class="tag">&lt;/td&gt;</span>
+                <span class="tag">&lt;td&gt;</span>Table Row 6 - Cell 3<span class="tag">&lt;/td&gt;</span>
+                <span class="tag">&lt;td&gt;</span>Table Row 6 - Cell 4<span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;/tr&gt;</span>
+        <span class="tag">&lt;/tbody&gt;</span>
+    <span class="tag">&lt;/table&gt;</span></code></pre>
                 </figure>
             </section>
-        </article>
-        <!-- END CONTENT STYLES COPY -->
-        <!-- START BUTTONS -->
-        <article id="button">
-            <aside>
+            <!-- END CONTENT STYLES COPY -->
+            <!-- START BUTTONS -->
+            <section id="button">
                 <h1 class="sg">Buttons</h1>
                 <p class="sg">To the right, the button styles are shown. These can be used throughout the site to add a more obvious call to action.</p>
-            </aside>
-            <section>
                 <h2 class="sg">Primary Buttons</h2>
                 <div class="row">
                     <figure class="sg-button">
                         <div class="buttons">
                             <a href="#" class="btn btn-primary">Learn More</a>
-                            <a href="#" class="btn btn-primary hover">Learn More</a>
+                            <a href="#" class="btn btn-primary visible-print-inline-block hover">Learn More</a>
                         </div>
                         <table class="table sg sg-info">
                             <tr>
@@ -657,7 +657,7 @@ Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
                     <figure class="sg-button">
                         <div class="buttons">
                             <a href="#" class="btn btn-success">Learn More</a>
-                            <a href="#" class="btn btn-success hover">Learn More</a>
+                            <a href="#" class="btn btn-success visible-print-inline-block hover">Learn More</a>
                         </div>
                         <table class="table sg sg-info">
                             <tr>
@@ -669,7 +669,7 @@ Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
                     <figure class="sg-button">
                         <div class="buttons">
                             <a href="#" class="btn btn-warning">Learn More</a>
-                            <a href="#" class="btn btn-warning hover">Learn More</a>
+                            <a href="#" class="btn btn-warning visible-print-inline-block hover">Learn More</a>
                         </div>
                         <table class="table sg sg-info">
                             <tr>
@@ -681,7 +681,7 @@ Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
                     <figure class="sg-button">
                         <div class="buttons">
                             <a href="#" class="btn btn-danger">Learn More</a>
-                            <a href="#" class="btn btn-danger hover">Learn More</a>
+                            <a href="#" class="btn btn-danger visible-print-inline-block hover">Learn More</a>
                         </div>
                         <table class="table sg sg-info">
                             <tr>
@@ -692,15 +692,11 @@ Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
                     </figure>
                 </div>
             </section>
-        </article>
-        <!-- END BUTTONS -->
-        <!-- START ICONOGRAPHY -->
-        <article id="iconography">
-            <aside>
+            <!-- END BUTTONS -->
+            <!-- START ICONOGRAPHY -->
+            <section id="iconography">
                 <h1 class="sg">Iconography</h1>
                 <p class="sg">Icons can be used to convey information and not simply for decoration. Icons are primarily used as a symbolic representation for the user to have a quick association between image and type.</p>
-            </aside>
-            <section>
                 <h2 class="sg">Image Icons</h2>
                 <div class="row">
                     <figure class="sg-icon">
@@ -818,8 +814,29 @@ Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
                     </figure>
                 </div>
             </section>
+            <!-- END ICONOGRAPHY -->
         </article>
-        <!-- END ICONOGRAPHY -->
+        <article id="components">
+            <section class="sg jumbotron">
+                <h1 class="sg">[CLIENT] Components Guide</h1>
+                <p class="sg">Your components guide will give you a refresher of what eacch component used on your site is named, along with a visual representation of that component.</p>
+            </section>
+            <section id="banners">
+                <h2>Banners</h2>
+            </section>
+            <section id="tabs">
+                <h2>Tabs</h2>
+            </section>
+            <section id="accordions">
+                <h2>Accordions</h2>
+            </section>
+            <section id="Calls To Action">
+                <h2>Calls To Action</h2>
+            </section>
+            <section id="Promos">
+                <h2>Promos</h2>
+            </section>
+        </article>
     </main>
     <footer>
         <div class="container-fluid">
@@ -859,8 +876,6 @@ Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
                 var loc = jQuery(this).attr('href'),
                     $loc = jQuery(loc),
                     locScroll = $loc.position().top - jQuery('header').outerHeight(true) + 60;
-                jQuery('.nav-main .active').removeClass('active');
-                jQuery('.nav-main a[href="' + loc + '"]').parent().addClass('active');
                 jQuery('html, body').animate({
                     scrollTop: locScroll
                 });
