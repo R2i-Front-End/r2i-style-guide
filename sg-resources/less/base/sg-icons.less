@@ -4,11 +4,27 @@
     width: 20%; 
     padding: @gutter;
     margin: 0;
+    &:nth-child(5n + 1) {
+        clear: both;
+    }
     .swatch {
         padding: 66.667% 0 0;
         display: block;
         border: 1px solid @grey-6;
         margin: 0 0 (@gutter * .75);
+        position: relative;
+        > span, > svg {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            .translate(-50%, -50%);
+            font-size: 4.8rem;
+            .txt-white;
+        }
+        > svg {
+            fill: @white;
+            height: 40%;
+        }
     }
     h3 {
         margin: 0 0 1em;

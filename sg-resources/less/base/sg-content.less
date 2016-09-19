@@ -1,18 +1,30 @@
 /* CSS Document */
 .sg-content {
     + .sg-content {
-        border-top: 1px solid @grey-1;
-        padding: (@gutter * 2) 0 0;
-        margin: (@gutter * 2) 0 0;
+        border-top: 3px solid @grey-5;
+        padding: (@gutter * 4) 0 0;
+        margin: (@gutter * 4) 0 0;
     }
     + h2 {
         &.sg {
-            border-top: 1px solid @grey-1;
-            padding-top: (@gutter * 3);
-            margin-top: (@gutter * 3);
+            border-top: 3px solid @grey-5;
+            padding-top: (@gutter * 6);
+            margin-top: (@gutter * 6);
         }
     }
     table.sg {
         margin-top: (@gutter * 2);
+    }
+    @media @mediaLG {
+        .clearfix;
+        table.sg-info {
+            float: left;
+            width: ~"calc(50% - @{gutter})";
+            margin-top: 0;
+        }
+        pre {
+            float: right;
+            width: ~"calc(50% - @{gutter})";
+        }
     }
 }

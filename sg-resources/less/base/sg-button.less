@@ -2,12 +2,11 @@
 .sg-button {
     float: left; 
     width: 25%; 
-    padding: @gutter;
+    padding: (@gutter * 1.5) @gutter;
     margin: 0;
-    .sg-info {
-        margin: (@gutter * 1.5) 0 0;
+    &:nth-child(4n + 1) {
+        clear: both;
     }
     .buttons {
-        .ta-center;
     }
 }

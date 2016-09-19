@@ -1,10 +1,10 @@
 /* CSS Document */
 .nav-main {
     position: fixed;
-    top: 8vh;
+    top: 5vh;
     left: 0;
     width: 16.667vw;
-    height: 85vh;
+    height: 91vh;
     .bg-white;
     border-right: 1px solid @grey-6;
     .txt-grey-5;
@@ -36,8 +36,33 @@
                         font-size: 1.2rem;
                         padding: .75vh 4vh .75vh 6vh;
                     }
+                    > ul {
+                        display: none;
+                        margin: 0;
+                        padding: 0;
+                        > li {
+                            + li {
+                            }
+                            > a {
+                                display: block;
+                                color: @grey-3;
+                                font-size: 1.2rem;
+                                padding: .75vh 4vh .75vh 8vh;
+                            }
+                            &.active {
+                                > a {
+                                    color: @tertiary;
+                                }
+                            }
+                        }
+                    }
                     &.active {
-                        color: @tertiary;
+                        > a {
+                            color: @tertiary;
+                        }
+                        > ul {
+                            display: block;
+                        }
                     }
                 }
             }
