@@ -1,0 +1,417 @@
+﻿.cta-promo {
+    a {
+        display: block;
+        position: relative;
+        .brand-bg-grey-6;
+        background-size: cover;
+        .ta-center;
+
+        &:hover {
+            text-decoration: none;
+        }
+
+        > .copy {
+            position: relative;
+            z-index: 5;
+            width: 100%;
+            padding: (@gutter * 2) (@gutter * 2) (@gutter * 4);
+            display: block;
+        }
+
+        .promo-title {
+            display: block;
+            .fs(1.5);
+            .uppercase;
+            .fw-bold;
+        }
+
+        .promo-copy {
+            display: block;
+            .fslh(2.4, 1.333em);
+        }
+
+        &:after {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 0;
+            content: '';
+            .brand-bg-green;
+            .transition;
+            z-index: 2;
+        }
+    }
+
+    &.has-image {
+        a:before {
+            position: absolute;
+            background: rgba(77, 79, 83, .6);
+            z-index: 1;
+            content: '';
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    svg {
+        width: 50px;
+        width: 5rem;
+        height: 50px;
+        height: 5rem;
+        display: block;
+        margin: 0 auto @gutterPX;
+        margin: 0 auto @gutter;
+    }
+
+    .ta-left {
+        svg {
+            float: left;
+        }
+
+        .promo-title {
+            clear: both;
+        }
+    }
+
+    .ta-center {
+        .promo-title {
+            display: block;
+            .fs(1.8);
+        }
+    }
+
+    .ico-black {
+        svg {
+            * {
+                fill: #000;
+            }
+        }
+    }
+
+    .ico-white {
+        svg {
+            * {
+                fill: #fff;
+            }
+        }
+    }
+
+    .ico-grey-1 {
+        svg {
+            * {
+                fill: #4d4f53;
+            }
+        }
+    }
+
+    .ico-grey-2 {
+        svg {
+            * {
+                fill: #63666a;
+            }
+        }
+    }
+
+    .ico-grey-3 {
+        svg {
+            * {
+                fill: #8b8d8e;
+            }
+        }
+    }
+
+    .ico-grey-4 {
+        svg {
+            * {
+                fill: #bcbec0;
+            }
+        }
+    }
+
+    .ico-grey-5 {
+        svg {
+            * {
+                fill: #c8c9c7;
+            }
+        }
+    }
+
+    .ico-grey-6 {
+        svg {
+            * {
+                fill: #d9d9d6;
+            }
+        }
+    }
+
+    .ico-orange {
+        svg {
+            * {
+                fill: #ff671f;
+            }
+        }
+    }
+
+    .ico-yellow {
+        svg {
+            * {
+                fill: #dbe442;
+            }
+        }
+    }
+
+    .ico-pale-green {
+        svg {
+            * {
+                fill: #78d64b;
+            }
+        }
+    }
+
+    .ico-green {
+        svg {
+            * {
+                fill: #00ab84;
+            }
+        }
+    }
+
+    .ico-aqua {
+        svg {
+            * {
+                fill: #3cdbc0;
+            }
+        }
+    }
+
+    .ico-blue {
+        svg {
+            * {
+                fill: #2261b5;
+            }
+        }
+    }
+
+    .ico-sky {
+        svg {
+            * {
+                fill: #7cc3e2;
+            }
+        }
+    }
+
+    &.has-image {
+        &.brand-bg-black {
+            &:after {
+                .brand-bg-black;
+            }
+
+            &:hover {
+                .page-curl {
+                    span {
+                        .brand-txt-black;
+                    }
+                }
+            }
+        }
+
+        &.brand-bg-white {
+            &:after {
+                .brand-bg-white;
+            }
+
+            &:hover {
+                .page-curl {
+                    span {
+                        .brand-txt-white;
+                    }
+                }
+            }
+        }
+
+       &.brand-bg-grey-1 {
+            &:after {
+                .brand-bg-grey-1;
+            }
+
+            &:hover {
+                .page-curl {
+                    span {
+                        .brand-txt-grey-1;
+                    }
+                }
+            }
+        }
+
+        &.brand-bg-grey-2 {
+            &:after {
+                .brand-bg-grey-2;
+            }
+
+            &:hover {
+                .page-curl {
+                    span {
+                        .brand-txt-grey-2;
+                    }
+                }
+            }
+        }
+
+        &.brand-bg-grey-3 {
+            &:after {
+                .brand-bg-grey-3;
+            }
+
+            &:hover {
+                .page-curl {
+                    span {
+                        .brand-txt-grey-3;
+                    }
+                }
+            }
+        }
+
+        &.brand-bg-grey-4 {
+            &:after {
+                .brand-bg-grey-4;
+            }
+
+            &:hover {
+                .page-curl {
+                    span {
+                        .brand-txt-grey-4;
+                    }
+                }
+            }
+        }
+
+        &.brand-bg-grey-5 {
+            &:after {
+                .brand-bg-grey-5;
+            }
+
+            &:hover {
+                .page-curl {
+                    span {
+                        .brand-txt-grey-5;
+                    }
+                }
+            }
+        }
+
+        &.brand-bg-grey-6 {
+            &:after {
+                .brand-bg-grey-6;
+            }
+
+            &:hover {
+                .page-curl {
+                    span {
+                        .brand-txt-grey-6;
+                    }
+                }
+            }
+        }
+
+        &.brand-bg-orange {
+            &:after {
+                .brand-bg-orange;
+            }
+
+            &:hover {
+                .page-curl {
+                    span {
+                        .brand-txt-orange;
+                    }
+                }
+            }
+        }
+
+        &.brand-bg-yellow {
+            &:after {
+                .brand-bg-yellow;
+            }
+
+            &:hover {
+                .page-curl {
+                    span {
+                        .brand-txt-yellow;
+                    }
+                }
+            }
+        }
+
+        &.brand-bg-pale-green {
+            &:after {
+                .brand-bg-pale-green;
+            }
+
+            &:hover {
+                .page-curl {
+                    span {
+                        .brand-txt-pale-green;
+                    }
+                }
+            }
+        }
+
+        &.brand-bg-green {
+            &:after {
+                .brand-bg-green;
+            }
+
+            &:hover {
+                .page-curl {
+                    span {
+                        .brand-txt-green;
+                    }
+                }
+            }
+        }
+
+        &.brand-bg-aqua {
+            &:after {
+                .brand-bg-aqua;
+            }
+
+            &:hover {
+                .page-curl {
+                    span {
+                        .brand-txt-aqua;
+                    }
+                }
+            }
+        }
+
+        &.brand-bg-blue {
+            &:after {
+                .brand-bg-blue;
+            }
+
+            &:hover {
+                .page-curl {
+                    span {
+                        .brand-txt-blue;
+                    }
+                }
+            }
+        }
+
+        &.brand-bg-sky {
+            &:after {
+                .brand-bg-sky;
+            }
+
+            &:hover {
+                .page-curl {
+                    span {
+                        .brand-txt-sky;
+                    }
+                }
+            }
+        }
+    }
+}

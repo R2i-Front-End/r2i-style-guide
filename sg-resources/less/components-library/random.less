@@ -1,0 +1,207 @@
+section, .cta {
+    position: relative;
+
+    > .container-fluid {
+        z-index: 0;
+        position: relative;
+        width: 85%;
+        margin: 0 auto;
+        max-width: 1400px;
+    }
+
+    > h2, > .container-fluid > h2 {
+        .fslh(3.6, 1.5em);
+        position: relative;
+        padding: 0 0 ~"calc(.5em + 3px)";
+        margin: 0 0 1.125em;
+        .fw-xlight;
+        .ta-center;
+        z-index: 5;
+
+        &:before {
+            content: "";
+            position: absolute;
+            display: block;
+            height: 3px;
+            width: 70px;
+            .bg-white;
+            bottom: 0;
+            left: 50%;
+            margin: 0 0 0 -35px;
+        }
+
+        @media @mediaSM {
+            .fs(4.8);
+            padding: 0 0 ~"calc(.25em + 3px)";
+        }
+
+        @media @mediaMD {
+            .fs(5.2);
+        }
+
+        @media @mediaLG {
+            .fs(5.4);
+        }
+
+        @media @mediaXL {
+            .fs(6);
+        }
+    }
+
+    &.bg-white, &.bg-grey-4, &.bg-grey-5, &.bg-grey-6, &.what-we-do {
+        > h2, > .container-fluid > h2 {
+            &:before {
+                .bg-grey-1;
+            }
+        }
+    }
+
+    > svg {
+        z-index: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+
+        * {
+            fill: rgba(0,0,0,.08);
+        }
+    }
+
+    &.bg-svg-black {
+        > svg {
+            * {
+                fill: rgba(0, 0, 0, .08);
+            }
+        }
+    }
+
+    &.bg-svg-white {
+        > svg {
+            * {
+                fill: rgba(255, 255, 255, .08);
+            }
+        }
+    }
+
+    &.bg-svg-grey-1 {
+        > svg {
+            * {
+                fill: rgba(77, 79, 83, .08);
+            }
+        }
+    }
+
+    &.bg-svg-grey-2 {
+        > svg {
+            * {
+                fill: rgba(99, 102, 106, .08);
+            }
+        }
+    }
+
+    &.bg-svg-grey-3 {
+        > svg {
+            * {
+                fill: rgba(139, 141, 142, .08);
+            }
+        }
+    }
+
+    &.bg-svg-grey-4 {
+        > svg {
+            * {
+                fill: rgba(200, 201, 199, .08);
+            }
+        }
+    }
+
+    &.bg-svg-grey-5 {
+        > svg {
+            * {
+                fill: rgba(200, 201, 199, .08);
+            }
+        }
+    }
+
+    &.bg-svg-grey-6 {
+        > svg {
+            * {
+                fill: rgba(	217, 217, 214, .08);
+            }
+        }
+    }
+
+    &.bg-svg-grey-7 {
+        > svg {
+            * {
+                fill: rgba(230, 231, 232, .08);
+            }
+        }
+    }
+
+    &.bg-svg-grey-8 {
+        > svg {
+            * {
+                fill: rgba(	242, 242, 241, .08);
+            }
+        }
+    }
+
+    &.bg-svg-orange {
+        > svg {
+            * {
+                fill: rgba(255, 103, 31, .08);
+            }
+        }
+    }
+
+    &.bg-svg-yellow {
+        > svg {
+            * {
+                fill: rgba(219, 228, 66, .08);
+            }
+        }
+    }
+
+    &.bg-svg-pale-green {
+        > svg {
+            * {
+                fill: rgba(120, 214, 75, .08);
+            }
+        }
+    }
+
+    &.bg-svg-green {
+        > svg {
+            * {
+                fill: rgba(0, 171, 132, .08);
+            }
+        }
+    }
+
+    &.bg-svg-aqua {
+        > svg {
+            * {
+                fill: rgba(60, 219, 192, .08);
+            }
+        }
+    }
+
+    &.bg-svg-blue {
+        > svg {
+            * {
+                fill: rgba(34, 97, 181, .08);
+            }
+        }
+    }
+
+    &.bg-svg-sky {
+        > svg {
+            * {
+                fill: rgba(124, 195, 226, .08);
+            }
+        }
+    }
+}

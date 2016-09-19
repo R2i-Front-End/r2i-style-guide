@@ -1,0 +1,396 @@
+/* CSS Document */
+.sg-content, .sg-component {
+    h1, h2, h3, h4, h5, h6, p, li, div, blockquote {
+        .kiev;
+        .fslh(1.8rem, 2em);
+        .brand-txt-grey-1;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        .lh(1.25em);
+        margin: 0 0 .5em;
+    }
+    h1 {
+        .fw-light;
+        .fs(3.8);
+    }
+    h2 {
+        .fw-light;
+        .fs(3.4);
+    }
+    h3 {
+        .fw-light;
+        .fs(3);
+    }
+    h4 {
+        .fw-regular;
+        .fs(2.8);
+    }
+    h5 {
+        .fw-bold;
+        .fs(1.8);
+    }
+    h6 {
+        .fw-bold;
+        .fs(1.6);
+    }
+    p, li, div, blockquote {
+        .fslh(1.4, 2em);
+    }
+    p, ol, ul, blockquote {
+        margin: 0 0 2em;
+    }
+    p {
+        &.disclaimer {
+            .fs(1.3);
+            .fs-italic;
+        }
+    }
+    li {
+        margin: 0 0 .25em;
+    }
+    ol {
+        ol {
+            ol {
+            }
+        }
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        li {
+            list-style-type: none;
+            position: relative;
+            padding: 0 0 0 40px;
+            @media @mediaXS {
+                padding: 0 0 0 20px;
+            }
+            &:before {
+                content: "";
+                position: absolute;
+                left: 15px;
+                top: 15px;
+                width: 6px;
+                height: 6px;
+                .brand-bg-orange;
+                display: block;
+                border-radius: 50%;
+                @media @mediaXS {
+                    left: 5px;
+                    top: 11px;
+                    width: 5px;
+                    height: 5px;
+                }
+            }
+        }
+        ul {
+            ul {
+            }
+        }
+        &.check {
+            li {
+                &:before {
+                    content: '\f00c';
+                    background-color: transparent;
+                    color: @orange;
+                    font-size: 15px;
+                    width: 15px;
+                    height: 15px;
+                    line-height: 15px;
+                    text-align: center;
+                    font-family: 'Availity Icons';
+                    top: 11px;
+                    left: 10px;
+                    @media @mediaXS {
+                        top: 9px;
+                        left: 2px;
+                        font-size: 10px;
+                        width: 10px;
+                        height: 10px;
+                        line-height: 10px;
+                    }
+                }
+            }
+        }
+        &.circle-check {
+            li {
+                &:before {
+                    content: '\f00c';
+                    color: @white;
+                    font-size: 10px;
+                    width: 16px;
+                    height: 16px;
+                    line-height: 16px;
+                    text-align: center;
+                    font-family: 'Availity Icons';
+                    top: 11px;
+                    left: 9px;
+                    @media @mediaXS {
+                        top: 7px;
+                        left: 0px;
+                        font-size: 8px;
+                        width: 12px;
+                        height: 12px;
+                        line-height: 12px;
+                    }
+                }
+            }
+        }
+    }
+    ul, ol {
+        ul, ol {
+            margin: .25em 0 0;
+            ul, ol {
+                margin: .25em 0 0;
+            }
+        }
+        @media @mediaMD {
+            &.list-col-2, &.list-col-3, &.list-col-4 {
+                .csscolumns & {
+                    .columns(@count: 2, @gap: (@gutter * 4), @rule-w: 0, @rule-color: @grey-6);
+                    > li {
+                        width: 100%;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        @media @mediaLG {
+            &.list-col-3 {
+                .csscolumns & {
+                    .columns(@count: 3, @gap: (@gutter * 4), @rule-w: 0, @rule-color: @grey-6);
+                }
+            }
+            &.list-col-4 {
+                .csscolumns & {
+                    .columns(@count: 4, @gap: (@gutter * 4), @rule-w: 0, @rule-color: @grey-6);
+                }
+            }
+        }
+    }
+    a {
+        .brand-txt-blue;
+        text-decoration: none;
+        .fw-medi;
+        &:hover {
+            text-decoration: underline;
+            .brand-txt-orange;
+        }
+    }
+    blockquote {
+        padding: @gutter 0 @gutter (@gutter * 2);
+        border-color: @orange;
+        position: relative;
+        &.accent-black {
+            border-color: @black;
+        }
+        &.accent-white {
+            border-color: @white;
+        }
+        &.accent-grey-1 {
+            border-color: @grey-1;
+        }
+        &.accent-grey-2 {
+            border-color: @grey-2;
+        }
+        &.accent-grey-3 {
+            border-color: @grey-3;
+        }
+        &.accent-grey-4 {
+            border-color: @grey-4;
+        }
+        &.accent-grey-5 {
+            border-color: @grey-5;
+        }
+        &.accent-grey-6 {
+            border-color: @grey-6;
+        }
+        &.accent-orange {
+            border-color: @orange;
+        }
+        &.accent-yellow {
+            border-color: @yellow;
+        }
+        &.accent-pale-green {
+            border-color: @pale-green;
+        }
+        &.accent-green {
+            border-color: @green;
+        }
+        &.accent-aqua {
+            border-color: @aqua;
+        }
+        &.accent-blue {
+            border-color: @blue;
+        }
+        &.accent-sky {
+            border-color: @sky;
+        }
+        div, p {
+            &.quote {
+                margin: 0 0 1em;
+                .fslh(1.8rem, 1.5em);
+                .fw-light;
+                .fs-italic;
+                p {
+                    margin: 0 0 1em;
+                    .fslh(1.8rem, 1.5em);
+                    .fw-light;
+                    .fs-italic;
+                }
+            }
+            &.attribution {
+                margin: 0;
+                .fs(1.5rem);
+                .fw-regular;
+                .seperator {
+                    margin: 0 @gutter;
+                }
+            }
+        }
+    }
+    @media @mediaSM {
+        h1, h2 {
+            .fs(4.2);
+        }
+        h3 {
+            .fs(3.6);
+        }
+        h4 {
+            .fs(3);
+        }
+        h5 {
+            .fs(2);
+        }
+        p, li, div, blockquote {
+            .fs(1.4);
+        }
+        blockquote {
+            padding: @gutterPX 0 @gutterPX (@gutterPX * 4);
+            padding: @gutter 0 @gutter (@gutter * 4);
+
+            div, p {
+                &.quote {
+                    .fs(2.2);
+
+                    p {
+                        .fs(2.2);
+                    }
+                }
+            }
+        }
+    }
+    @media @mediaMD {
+        h1 {
+            .fs(5.2);
+        }
+
+        h2 {
+            .fs(4.6);
+        }
+
+        h3 {
+            .fs(4);
+        }
+
+        h4 {
+            .fs(3.4);
+        }
+
+        h5 {
+            .fs(2.2);
+        }
+
+        p, li, div, blockquote {
+            .fs(1.6);
+        }
+
+        blockquote {
+            padding: @gutterPX (@gutterPX * 6);
+            padding: @gutter (@gutter * 6);
+
+            div, p {
+                &.quote {
+                    .fs(2.4);
+
+                    p {
+                        .fs(2.4);
+                    }
+                }
+            }
+
+            &:before, &:after {
+                position: absolute;
+                .brand-txt-grey-5;
+                .fslh(12, 1em);
+                .fw-bold;
+            }
+
+            &:before {
+                left: @gutterPX;
+                top: (@gutterPX * .5);
+                left: @gutter;
+                top: (@gutter * .5);
+                content: "\201C";
+            }
+
+            &:after {
+                right: @gutterPX;
+                bottom: (@gutterPX * 1.25);
+                right: @gutter;
+                bottom: (@gutter * 1.25);
+                content: "\201D";
+            }
+        }
+    }
+
+    @media @mediaLG {
+        h1 {
+            .fs(5.4);
+        }
+
+        h2 {
+            .fs(4.8);
+        }
+
+        h3 {
+            .fs(4.2);
+        }
+
+        h4 {
+            .fs(3.6);
+        }
+
+        h5 {
+            .fs(2.4);
+        }
+
+        p, li, div, blockquote {
+            .fs(1.8);
+        }
+
+        blockquote {
+            padding: @gutterPX (@gutterPX * 8);
+            padding: @gutter (@gutter * 8);
+
+            div, p {
+                &.quote {
+                    .fs(2.6);
+
+                    p {
+                        .fs(2.6);
+                    }
+                }
+            }
+
+            &:before {
+                left: (@gutterPX * 2);
+                left: (@gutter * 2);
+            }
+
+            &:after {
+                right: (@gutterPX * 2);
+                right: (@gutter * 2);
+            }
+        }
+    }
+}

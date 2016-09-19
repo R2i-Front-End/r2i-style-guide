@@ -1,0 +1,397 @@
+﻿.framed-carousel-wrap {
+    padding: (@gutterPX * 2) 0 0;
+    padding: (@gutter * 2) 0 0;
+    .bg-white;
+
+    > h2 {
+        .txt-white;
+        padding-left: @gutterPX;
+        padding-right: @gutterPX;
+        padding-left: @gutter;
+        padding-right: @gutter;
+        &:before {
+            .bg-white;
+        }
+    }
+
+    @media @mediaSM {
+        padding: (@gutterPX * 4) 0 0;
+        padding: (@gutter * 4) 0 0;
+
+        > h2 {
+            display: block;
+        }
+    }
+
+    @media @mediaMD {
+        padding: (@gutterPX * 5) 0 0;
+        padding: (@gutter * 5) 0 0;
+    }
+
+    @media @mediaLG {
+        padding: (@gutterPX * 6) 0 0;
+        padding: (@gutter * 5) 0 0;
+    }
+
+    @media @mediaXL {
+        padding: (@gutterPX * 8) 0 0;
+        padding: (@gutter * 8) 0 0;
+    }
+
+    .copy {
+        .txt-white;
+        max-width: 1600px;
+        width: 95%;
+        margin: 0 auto (@gutterPX * 4);
+        margin: 0 auto (@gutter * 4);
+        .ta-center;
+        display: none;
+        .fslh(1.6rem, 2em);
+
+        @media @mediaSM {
+            .fs(1.8);
+        }
+
+        @media @mediaMD {
+            .fs(2.4);
+            width: 90%;
+            display: block;
+        }
+
+        @media @mediaLG {
+            .fs(2.6);
+        }
+
+        @media @mediaXL {
+            .fs(2.8);
+        }
+    }
+
+    .frame-wrap {
+        width: 100%;
+        position: relative;
+        z-index: 10;
+
+        @media @mediaMD {
+            background: url(images/ipad.png) no-repeat;
+            background-size: contain;
+            margin: 0 auto;
+            width: 66.667%;
+            max-width: 1200px;
+        }
+
+        .framed-carousel {
+            padding-top: 75%;
+            position: relative;
+
+            @media @mediaMD {
+                padding-top: 62.135%;
+            }
+
+            .carousel-inner {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                .translateX(-50%);
+
+                @media @mediaMD {
+                    height: 93%;
+                    width: 82%;
+                }
+            }
+
+            .item {
+                height: 100%;
+                width: 100%;
+                border: none;
+                min-height: 0;
+                overflow: hidden;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 1;
+                    opacity: .8;
+                }
+
+                &.bg-black {
+                    &:before {
+                        background-color: @black;
+                    }
+                }
+
+                &.bg-white {
+                    &:before {
+                        background-color: @white;
+                    }
+                }
+
+                &.bg-grey-1 {
+                    &:before {
+                        background-color: @grey-1;
+                    }
+                }
+
+                &.bg-grey-2 {
+                    &:before {
+                        background-color: @grey-2;
+                    }
+                }
+
+                &.bg-grey-3 {
+                    &:before {
+                        background-color: @grey-3;
+                    }
+                }
+
+                &.bg-grey-4 {
+                    &:before {
+                        background-color: @grey-4;
+                    }
+                }
+
+                &.bg-grey-5 {
+                    &:before {
+                        background-color: @grey-5;
+                    }
+                }
+
+                &.bg-grey-6 {
+                    &:before {
+                        background-color: @grey-6;
+                    }
+                }
+
+                &.bg-orange {
+                    &:before {
+                        background-color: @orange;
+                    }
+                }
+
+                &.bg-yellow {
+                    &:before {
+                        background-color: @yellow;
+                    }
+                }
+
+                &.bg-pale-green {
+                    &:before {
+                        background-color: @pale-green;
+                    }
+                }
+
+                &.bg-green {
+                    &:before {
+                        background-color: @green;
+                    }
+                }
+
+                &.bg-aqua {
+                    &:before {
+                        background-color: @aqua;
+                    }
+                }
+
+                &.bg-blue {
+                    &:before {
+                        background-color: @blue;
+                    }
+                }
+
+                &.bg-sky {
+                    &:before {
+                        background-color: @sky;
+                    }
+                }
+            }
+
+            .carousel-caption {
+                top: 50%;
+                left: 50%;
+                .translate(-50%, -60%);
+                bottom: auto;
+                right: auto;
+                margin: 0;
+                padding: 0;
+                width: 85%;
+                .text-shadow-none;
+
+                @media @mediaMD {
+                    .translate(-50%, -50%);
+                }
+            }
+
+            h3 {
+                font-size: 7vw;
+                .ta-center;
+                .fw-xlight;
+                .kiev;
+                margin: 0 0 1em;
+                position: relative;
+                z-index: 2;
+
+                @media @mediaMD {
+                    font-size: 3.25vw;
+                }
+
+                @media @mediaXXL {
+                    font-size: 7rem;
+                    .txt-white;
+                }
+            }
+
+            .btn {
+                position: relative;
+                z-index: 3;
+            }
+
+            img {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: auto;
+                height: 100%;
+                .translate(-50%, -50%);
+                z-index: 0;
+
+                @media @mediaMD {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+        .carousel-indicators {
+            bottom: 1rem;
+
+            @media @mediaMD {
+                bottom: 4rem;
+            }
+        }
+    }
+
+    &.scEnabledChrome {
+        position: relative;
+        padding-top: 0;
+        height: auto;
+
+        .frame-wrap {
+            .framed-carousel {
+                padding-top: 5%;
+            }
+
+            .carousel-indicators {
+                display: none;
+            }
+
+            .carousel-inner {
+                position: relative;
+                height: auto;
+            }
+
+            .item {
+                position: relative;
+                top: auto;
+                padding-top: 75%;
+                display: block;
+
+                &:before {
+                    width: 95%;
+                    left: 5%;
+                }
+
+                @media @mediaMD {
+                    padding-top: 62.135%;
+                }
+            }
+        }
+    }
+
+    &.bg-black {
+        background-color: @black;
+    }
+
+    &.bg-white {
+        background-color: @white;
+    }
+
+    &.bg-grey-1 {
+        background-color: @grey-1;
+    }
+
+    &.bg-grey-2 {
+        background-color: @grey-2;
+    }
+
+    &.bg-grey-3 {
+        background-color: @grey-3;
+    }
+
+    &.bg-grey-4 {
+        background-color: @grey-4;
+    }
+
+    &.bg-grey-5 {
+        background-color: @grey-5;
+    }
+
+    &.bg-grey-6 {
+        background-color: @grey-6;
+    }
+
+    &.bg-grey-7 {
+        background-color: @grey-7;
+    }
+
+    &.bg-grey-8 {
+        background-color: @grey-8;
+    }
+
+    &.bg-orange {
+        background-color: @orange;
+    }
+
+    &.bg-yellow {
+        background-color: @yellow;
+    }
+
+    &.bg-pale-green {
+        background-color: @pale-green;
+    }
+
+    &.bg-green {
+        background-color: @green;
+    }
+
+    &.bg-aqua {
+        background-color: @aqua;
+    }
+
+    &.bg-blue {
+        background-color: @blue;
+    }
+
+    &.bg-sky {
+        background-color: @sky;
+    }
+
+    &.bg-white, &.bg-grey-4, &.bg-grey-5, &.bg-grey-6 {
+        h2 {
+            .txt-grey-1;
+
+            &:before {
+                .bg-grey-1;
+            }
+        }
+
+        .copy {
+            .txt-grey-1;
+        }
+    }
+}

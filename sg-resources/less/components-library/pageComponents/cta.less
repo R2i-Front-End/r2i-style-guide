@@ -1,0 +1,100 @@
+﻿.cta-promo, .cta-promo-image, .cta-resource {
+    .promo-title {
+        display: block;
+        .fs(1.5);
+        .uppercase;
+        .fw-bold;
+        margin: 0 0 20px;
+        margin: 0 0 2rem;
+        .brand-txt-white;
+
+        &:after {
+            margin: 1rem 0 0;
+            width: 3rem;
+            height: .3rem;
+            content: '';
+            overflow: hidden;
+            .transition;
+            .brand-bg-white;
+            display: block;
+        }
+    }
+
+    .ta-center {
+        .promo-title {
+            &:after {
+                margin: 1rem auto 0;
+            }
+        }
+    }
+
+    a {
+        &:hover {
+            &:after {
+                width: 100%;
+            }
+
+            .page-curl {
+                span {
+                    .brand-txt-green;
+                }
+            }
+        }
+    }
+
+    .page-curl {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 65px;
+        height: 42px;
+        z-index: 10;
+
+        &:before {
+            content: '';
+            height: 0;
+            width: 0;
+            oveflow: hidden;
+            border-style: solid;
+            border-width: 0 0 42px 65px;
+            border-color: transparent transparent #fff transparent;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: 50;
+        }
+
+        &:after {
+            content: '';
+            height: 0;
+            width: 0;
+            oveflow: hidden;
+            border-style: solid;
+            border-width: 0 0 65px 42px;
+            border-color: transparent transparent transparent #bcbec0;
+            position: absolute;
+            right: 10px;
+            bottom: -3px;
+            .rotate(24deg);
+            .transformOrigin(left, center);
+            z-index: 50;
+        }
+
+        span {
+            position: absolute;
+            z-index: 100;
+            .ta-right;
+            .brand-txt-grey-2;
+            right: 5px;
+            top: 50%;
+            .translate(0, -40%);
+            padding: 0;
+            .fs(1.8);
+        }
+    }
+}
+
+@import url(cta-featured.less);
+@import url(cta-promo.less);
+@import url(cta-image-promo.less);
+@import url(cta-resource.less);

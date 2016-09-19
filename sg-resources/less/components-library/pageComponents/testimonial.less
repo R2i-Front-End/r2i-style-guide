@@ -1,0 +1,260 @@
+.testimonial {
+    border: none;
+    text-align: center;
+    padding: (@gutterPX * 2) 0;
+    padding: (@gutter * 2) 0;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+
+    @media @mediaSM {
+        padding: (@gutterPX * 4) 0;
+        padding: (@gutter * 4) 0;
+    }
+
+    @media @mediaMD {
+        padding: (@gutterPX * 5) 0;
+        padding: (@gutter * 5) 0;
+    }
+
+    @media @mediaLG {
+        padding: (@gutterPX * 6) 0;
+        padding: (@gutter * 6) 0;
+    }
+
+    @media @mediaXL {
+        padding: (@gutterPX * 8) 0;
+        padding: (@gutter * 8) 0;
+    }
+
+    .container-fluid {
+        position: relative;
+        z-index: 2;
+    }
+
+    .quote-mark {
+        .kiev;
+        .fslh(20, 1);
+        &.txt-black {
+            color: rgb(0,0,0);
+        }
+    
+        &.txt-white {
+            color: rgb(255,255,255);
+        }
+    
+        &.txt-grey-1 {
+            color: rgb(77, 79, 83);
+        }
+    
+        &.txt-grey-2 {
+            color: rgb(99,102,106);
+        }
+    
+        &.txt-grey-3 {
+            color: rgb(139,141,142);
+        }
+    
+        &.txt-grey-4 {
+            color: rgb(200,201,199);
+        }
+    
+        &.txt-grey-5 {
+            color: rgb(217,217,214);
+        }
+    
+        &.txt-grey-6 {
+            color: rgb(222,223,224);
+        }
+    
+        &.txt-orange {
+            color: rgb(255,103,31);
+        }
+    
+        &.txt-yellow {
+            color: rgb(219,228,66);
+        }
+    
+        &.txt-pale-green {
+            color: rgb(120,214,75);
+        }
+    
+        &.txt-green {
+            color: rgb(0,171,132);
+        }
+    
+        &.txt-aqua {
+            color: rgb(60,219,192);
+        }
+    
+        &.txt-blue {
+            color: rgb(34,97,181);
+        }
+    
+        &.txt-sky {
+            color: rgb(124, 195, 226);
+        }
+    }
+
+    .quote {
+        .kiev;
+        .fs(2);
+        .brand-txt-white;
+        .fs-italic;
+        .fw-light;
+        margin: 0 auto 35px;
+        max-width: 1050px;
+
+        @media @mediaMD {
+            .fs(3.2);
+            width: 66.667%;
+        }
+
+        p {
+            .brand-txt-white;
+            font-size: 1em;
+            line-height: 1.333em;
+        }
+    }
+
+    .attributor {
+        .kiev;
+        .fs(1.4);
+        .brand-txt-white;
+        .fw-bold;
+
+        strong {
+            .uppercase;
+        }
+
+        .seperator {
+            margin: 0 10px;
+        }
+    }
+
+    img {
+        max-width: 160px;
+        display: block;
+        top: -7.5rem;
+        margin: 0 auto -5rem;
+        position: relative;
+    }
+
+    > img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        .translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+        z-index: 0;
+        max-width: none;
+        .filter(~'grayscale(100%) contrast(180%)');
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    &.bg-black {
+        &:before {
+            background-color: rgba(0,0,0, .8);
+        }
+    }
+
+    &.bg-white {
+        &:before {
+            background-color: rgba(255,255,255, .8);
+        }
+    }
+
+    &.bg-grey-1 {
+        &:before {
+            background-color: rgba(77, 79, 83, .8);
+        }
+    }
+
+    &.bg-grey-2 {
+        &:before {
+            background-color: rgba(99,102,106, .8);
+        }
+    }
+
+    &.bg-grey-3 {
+        &:before {
+            background-color: rgba(139,141,142, .8);
+        }
+    }
+
+    &.bg-grey-4 {
+        &:before {
+            background-color: rgba(200,201,199, .8);
+        }
+    }
+
+    &.bg-grey-5 {
+        &:before {
+            background-color: rgba(217,217,214, .8);
+        }
+    }
+
+    &.bg-grey-6 {
+        &:before {
+            background-color: rgba(222,223,224, .8);
+        }
+    }
+
+    &.bg-orange {
+        &:before {
+            background-color: rgba(255,103,31, .8);
+        }
+    }
+
+    &.bg-yellow {
+        &:before {
+            background-color: rgba(219,228,66, .8);
+        }
+    }
+
+    &.bg-pale-green {
+        &:before {
+            background-color: rgba(120,214,75, .8);
+        }
+    }
+
+    &.bg-green {
+        &:before {
+            background-color: rgba(0,171,132, .8);
+        }
+    }
+
+    &.bg-aqua {
+        &:before {
+            background-color: rgba(60,219,192, .8);
+        }
+    }
+
+    &.bg-blue {
+        &:before {
+            background-color: rgba(34,97,181, .8);
+        }
+    }
+
+    &.bg-sky {
+        &:before {
+            background-color: rgba(124, 195, 226, .8);
+        }
+    }
+    &.scEnabledChrome {
+        &:before {
+            left: 10%;
+            width: 90%;
+        }
+    }
+}

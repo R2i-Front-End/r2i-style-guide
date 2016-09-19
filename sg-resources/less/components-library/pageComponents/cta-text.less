@@ -1,0 +1,27 @@
+.cta-text {
+    padding: @gutterPX;
+    padding: @gutter;
+    @media @mediaMD {
+        padding: (@gutterPX * 2);
+        padding: (@gutter * 2);
+    }
+    .title {
+        .fs(1.8);
+        .fw-bold;
+        margin: 0 0 @gutterPX;
+        margin: 0 0 @gutter;
+        @media @mediaMD {
+            .fs(2.2);
+        }
+    }
+    .copy {
+        margin: 0 0 @gutterPX;
+        margin: 0 0 @gutter;
+        *, & {
+            .fs(1.4);
+            @media @mediaMD {
+                .fs(1.6);
+            }
+        }
+    }
+}

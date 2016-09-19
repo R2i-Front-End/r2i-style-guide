@@ -1,0 +1,301 @@
+﻿.cta-resource {
+    a {
+        display: block;
+        position: relative;
+        .brand-bg-grey-6;
+        .brand-txt-grey-1;
+        .transition;
+
+        > .copy {
+            width: 100%;
+            padding: (@gutterPX * 2) (@gutterPX * 2) (@gutterPX * 4);
+            padding: (@gutter * 2) (@gutter * 2) (@gutter * 4);
+            display: block;
+            position: relative;
+            z-index: 5;
+
+            @media @mediaSMOnly {
+                padding: @gutterPX @gutterPX (@gutterPX * 4);
+                padding: @gutter @gutter (@gutter * 4);
+            }
+        }
+
+        .type {
+            display: block;
+            .fs(1.5);
+            .uppercase;
+            .fw-bold;
+            margin: 0 0 20px;
+            margin: 0 0 2rem;
+
+            &:after {
+                margin: 1rem 0 0;
+                width: 3rem;
+                height: .3rem;
+                content: '';
+                overflow: hidden;
+                .transition;
+                .brand-bg-grey-1;
+                display: block;
+            }
+        }
+
+        img {
+            width: 100%;
+            margin: 0 0 (@gutterPX * 2);
+            margin: 0 0 (@gutter * 2);
+        }
+
+        .title {
+            display: block;
+            .fslh(1.8, 1.333em);
+            .fw-light;
+
+            @media @mediaMD {
+                .fslh(2.4);
+            }
+
+            @media @mediaXL {
+                .fslh(2.8);
+            }
+        }
+
+        &:after {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 0;
+            content: '';
+            .transition;
+            z-index: 2;
+        }
+
+        &:hover {
+            .brand-txt-white;
+            text-decoration: none;
+
+            .type {
+                &:after {
+                    .brand-bg-white;
+                }
+            }
+        }
+    }
+
+    &:nth-child(odd) {
+        a {
+            .brand-bg-grey-7;
+        }
+    }
+
+    .bg-black {
+        a:after {
+            .brand-bg-black;
+        }
+
+        a:hover {
+            .page-curl {
+                span {
+                    .brand-txt-black;
+                }
+            }
+        }
+    }
+
+    .bg-white {
+        a:after {
+            .brand-bg-white;
+        }
+
+        a:hover {
+            .page-curl {
+                span {
+                    .brand-txt-white;
+                }
+            }
+        }
+    }
+
+    .bg-grey-1 {
+        a:after {
+            .brand-bg-grey-1;
+        }
+
+        a:hover {
+            .page-curl {
+                span {
+                    .brand-txt-grey-1;
+                }
+            }
+        }
+    }
+
+    .bg-grey-2 {
+        a:after {
+            .brand-bg-grey-2;
+        }
+
+        a:hover {
+            .page-curl {
+                span {
+                    .brand-txt-grey-2;
+                }
+            }
+        }
+    }
+
+    .bg-grey-3 {
+        a:after {
+            .brand-bg-grey-3;
+        }
+
+        a:hover {
+            .page-curl {
+                span {
+                    .brand-txt-grey-3;
+                }
+            }
+        }
+    }
+
+    .bg-grey-4 {
+        a:after {
+            .brand-bg-grey-4;
+        }
+
+        a:hover {
+            .page-curl {
+                span {
+                    .brand-txt-grey-4;
+                }
+            }
+        }
+    }
+
+    .bg-grey-5 {
+        a:after {
+            .brand-bg-grey-5;
+        }
+
+        a:hover {
+            .page-curl {
+                span {
+                    .brand-txt-grey-5;
+                }
+            }
+        }
+    }
+
+    .bg-grey-6 {
+        a:after {
+            .brand-bg-grey-6;
+        }
+
+        a:hover {
+            .page-curl {
+                span {
+                    .brand-txt-grey-6;
+                }
+            }
+        }
+    }
+
+    .bg-orange {
+        a:after {
+            .brand-bg-orange;
+        }
+
+        a:hover {
+            .page-curl {
+                span {
+                    .brand-txt-orange;
+                }
+            }
+        }
+    }
+
+    .bg-yellow {
+        a:after {
+            .brand-bg-yellow;
+        }
+
+        a:hover {
+            .page-curl {
+                span {
+                    .brand-txt-yellow;
+                }
+            }
+        }
+    }
+
+    .bg-pale-green {
+        a:after {
+            .brand-bg-pale-green;
+        }
+
+        a:hover {
+            .page-curl {
+                span {
+                    .brand-txt-pale-green;
+                }
+            }
+        }
+    }
+
+    .bg-green {
+        a:after {
+            .brand-bg-green;
+        }
+
+        a:hover {
+            .page-curl {
+                span {
+                    .brand-txt-green;
+                }
+            }
+        }
+    }
+
+    .bg-aqua {
+        a:after {
+            .brand-bg-aqua;
+        }
+
+        a:hover {
+            .page-curl {
+                span {
+                    .brand-txt-aqua;
+                }
+            }
+        }
+    }
+
+    .bg-blue {
+        a:after {
+            .brand-bg-blue;
+        }
+
+        a:hover {
+            .page-curl {
+                span {
+                    .brand-txt-blue;
+                }
+            }
+        }
+    }
+
+    .bg-sky {
+        a:after {
+            .brand-bg-sky;
+        }
+
+        a:hover {
+            .page-curl {
+                span {
+                    .brand-txt-sky;
+                }
+            }
+        }
+    }
+}

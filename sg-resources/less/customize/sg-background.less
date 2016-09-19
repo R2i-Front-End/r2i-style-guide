@@ -1,0 +1,78 @@
+/* CSS Document */
+.sg-background {
+    .swatch {
+        margin: 0 0 @gutter;
+        position: relative;
+        .bg-primary;
+        display: block;
+        overflow: hidden;
+        &.sm {
+            padding: 18.6667% 0 0;
+        }
+        &.md {
+            padding: 36.111% 0 0;
+        }
+        &.lg {
+            padding: 47.333% 0 0;
+        }
+        &.xl {
+            padding: 52% 0 0;
+        }
+        svg, img {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            fill: @white;
+            left: 0; 
+            top: 0;
+            z-index: 0;
+        }
+        img {
+            .filter(~"grayscale(100%) contrast(180%)");
+            min-height: 100%;
+            width: auto;
+            .translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+        }
+        &.overlay {
+            &:before {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                .bg-white;
+                z-index: 1;
+                content: '';
+                display: block;
+                .opacity(80);
+            }
+        }
+    }
+    &:nth-child(3n + 1) {
+        .swatch {
+            .bg-secondary;
+            &.overlay {
+                &:before {
+                    .bg-secondary;
+                }
+            }
+        }
+    }
+    &:nth-child(3n + 2) {
+        .swatch {
+            .bg-tertiary;
+            &.overlay {
+                &:before {
+                    .bg-branding-dgrey;
+                }
+            }
+        }
+    }
+    + .sg-background {
+        padding-top: (@gutter * 2);
+        margin-top: (@gutter * 2);
+        border-top: 1px solid @branding-lgrey;
+    }
+}

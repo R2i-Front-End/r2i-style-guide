@@ -1,0 +1,22 @@
+/* CSS Document */
+.sg-component {
+    + .sg-component {
+        border-top: 3px solid @grey-5;
+        padding: (@gutter * 4) 0 0;
+        margin: (@gutter * 4) 0 0;
+    }
+    + h2 {
+        &.sg {
+            border-top: 3px solid @grey-5;
+            padding-top: (@gutter * 6);
+            margin-top: (@gutter * 6);
+        }
+    }
+    table.sg {
+        margin-top: (@gutter * 4);
+    }
+    hr {
+        clear: both;
+        margin: (@gutter * 2) 0;
+    }
+}
